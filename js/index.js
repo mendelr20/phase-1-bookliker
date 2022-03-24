@@ -24,15 +24,51 @@ function appendDom(bookArray){
 function clickCallBack(book){
     const info = document.getElementById('show-panel')
     info.innerHTML = ''
+    
     info.innerHTML = `
-    <img src = ${book.img_url}>
+    <img src =${book.img_url}>
     <h2>${book.title}</h2>
     <p>${book.subtitle}</p>
     <p>${book.author}</p>
     <p>${book.description}</p>
-    <p>${book.users[0, 1].username}</p>
-
     `
+    let userTag = book.users.forEach(user => {
+        let p = document.createElement('p')
+        p.innerHTML = `${user.username}`
+        info.append(p)
+    })
+    const btn = document.createElement('button')
+    btn.innerHTML = 'LIKE'
+    info.append(btn) 
+    let id = book.id
+    // console.log(book.id)
+    btn.addEventListener('click', () => likeCallback(book, btn))
+}
 
-   
+function likeCallback(book,btn){
+    
+    btn.innerHTML = 'UNLIKE'
+    fetch(`http://localhost:3000/books/${book.id}`, {
+                method: "PATCH",
+                headers: {"Accept": "application/json",
+                    "Content-type": "application/json"},
+                body: JSON.stringify({
+                    id: book.id,
+                    title: book.title,
+                    subtitle: book.subtitle,
+                    description: book.description,
+                    img_url: book.img_url,
+                    users: [ 
+                        `${book.users}`,
+                        {
+                            id: 20,
+                            username: 'Mendel'
+                        }
+                    ]
+                })
+    })
+    .then(res => res.json())
+    .then(book => clickCallBack(book))
+    
+
 }

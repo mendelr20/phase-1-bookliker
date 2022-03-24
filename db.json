@@ -8,13 +8,39 @@
       "author": "Yoko Ono",
       "img_url": "https://books.google.com/books/content?id=3S8Rwr-iBdoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "users": [
+        [
+          [
+            [
+              [
+                [
+                  {
+                    "id": 20,
+                    "username": "Mendel"
+                  }
+                ],
+                {
+                  "id": 20,
+                  "username": "Mendel"
+                }
+              ],
+              {
+                "id": 20,
+                "username": "Mendel"
+              }
+            ],
+            {
+              "id": 20,
+              "username": "Mendel"
+            }
+          ],
+          {
+            "id": 20,
+            "username": "Mendel"
+          }
+        ],
         {
-          "id": 2,
-          "username": "auer"
-        },
-        {
-          "id": 8,
-          "username": "maverick"
+          "id": 20,
+          "username": "Mendel"
         }
       ]
     },
@@ -27,20 +53,8 @@
       "img_url": "https://books.google.com/books/content?id=GdmEDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "users": [
         {
-          "id": 10,
-          "username": "macejkovic"
-        },
-        {
-          "id": 4,
-          "username": "ann"
-        },
-        {
-          "id": 6,
-          "username": "steuber"
-        },
-        {
-          "id": 1,
-          "username": "pouros"
+          "id": 20,
+          "username": "Mendel"
         }
       ]
     },
@@ -52,13 +66,21 @@
       "author": "Bassey Ikpi",
       "img_url": "https://books.google.com/books/content?id=nHlbDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "users": [
+        [
+          [
+            {
+              "id": 20,
+              "username": "Mendel"
+            }
+          ],
+          {
+            "id": 20,
+            "username": "Mendel"
+          }
+        ],
         {
-          "id": 8,
-          "username": "maverick"
-        },
-        {
-          "id": 9,
-          "username": "alex"
+          "id": 20,
+          "username": "Mendel"
         }
       ]
     },
@@ -69,13 +91,25 @@
       "author": "Angela Y. Davis ",
       "img_url": "http://books.google.com/books/content?id=S3yODQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "users": [
+        [
+          [
+            {
+              "id": 10,
+              "username": "macejkovic"
+            },
+            {
+              "id": 8,
+              "username": "maverick"
+            }
+          ],
+          {
+            "id": 20,
+            "username": "Mendel"
+          }
+        ],
         {
-          "id": 10,
-          "username": "macejkovic"
-        },
-        {
-          "id": 8,
-          "username": "maverick"
+          "id": 20,
+          "username": "Mendel"
         }
       ]
     },
@@ -88,16 +122,8 @@
       "img_url": "https://books.google.com/books/content?id=hxGuDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api",
       "users": [
         {
-          "id": 10,
-          "username": "macejkovic"
-        },
-        {
-          "id": 4,
-          "username": "ann"
-        },
-        {
-          "id": 8,
-          "username": "maverick"
+          "id": 20,
+          "username": "Mendel"
         }
       ]
     },
@@ -189,13 +215,15 @@
       "author": "Tayari Jones",
       "img_url": "http://books.google.com/books/content?id=fc8PDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "users": [
+        [
+          {
+            "id": 20,
+            "username": "Mendel"
+          }
+        ],
         {
-          "id": 8,
-          "username": "maverick"
-        },
-        {
-          "id": 10,
-          "username": "macejkovic"
+          "id": 20,
+          "username": "Mendel"
         }
       ]
     },
@@ -207,13 +235,25 @@
       "author": "Imbolo Mbue",
       "img_url": "http://books.google.com/books/content?id=nEcsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "users": [
+        [
+          [
+            {
+              "id": 8,
+              "username": "maverick"
+            },
+            {
+              "id": 10,
+              "username": "macejkovic"
+            }
+          ],
+          {
+            "id": 20,
+            "username": "Mendel"
+          }
+        ],
         {
-          "id": 8,
-          "username": "maverick"
-        },
-        {
-          "id": 10,
-          "username": "macejkovic"
+          "id": 20,
+          "username": "Mendel"
         }
       ]
     }
