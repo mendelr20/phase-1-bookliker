@@ -57,8 +57,8 @@ function likeCallback(book, btn){
                     description: book.description,
                     img_url: book.img_url,
                     users: [...book.users, {
-                        id: 18,
-                        username: 'Hatazlah'
+                        id: 20,
+                        username: 'Mendel'
                     }]
                 })
     })
