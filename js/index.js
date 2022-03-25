@@ -1,7 +1,8 @@
 const url = 'http://localhost:3000/books'
 document.addEventListener("DOMContentLoaded", function() {
 fetchRequest()
-});
+let btn
+
 
 function fetchRequest(){
     fetch(url)
@@ -37,11 +38,13 @@ function clickCallBack(book){
         p.innerHTML = `${user.username}`
         info.append(p)
     })
-    const btn = document.createElement('button')
-    btn.innerHTML = 'LIKE'
+    btn = document.createElement('button')
+    btn.innerHTML = "LIKE"
     info.append(btn) 
     btn.addEventListener('click', () => likeCallback(book, btn))
 }
+
+
 
 function likeCallback(book, btn){
     if(btn.innerHTML === 'LIKE'){
@@ -63,26 +66,7 @@ function likeCallback(book, btn){
                 })
     })
     .then(res => res.json())
-    .then(book => () => {
-        const info = document.getElementById('show-panel')
-        info.innerHTML = ''
-        
-        info.innerHTML = `
-        <img src =${book.img_url}>
-        <h2>${book.title}</h2>
-        <p>${book.subtitle}</p>
-        <p>${book.author}</p>
-        <p>${book.description}</p>
-        `
-        let userTag = book.users.forEach(user => {
-            let p = document.createElement('p')
-            p.innerHTML = `${user.username}`
-            info.append(p)
-        })
-        const btn = document.createElement('button')
-        info.append(btn) 
-        btn.addEventListener('click', () => likeCallback(book, btn))
-    })
+    .then(likeCallback(book, btn))
     } else {
         btn.innerHTML = "LIKE"
         fetch(`http://localhost:3000/books/${book.id}`, {
@@ -99,28 +83,9 @@ function likeCallback(book, btn){
                 })
     })
     .then(res => res.json())
-    .then(book => () => {
-        const info = document.getElementById('show-panel')
-        info.innerHTML = ''
-        
-        info.innerHTML = `
-        <img src =${book.img_url}>
-        <h2>${book.title}</h2>
-        <p>${book.subtitle}</p>
-        <p>${book.author}</p>
-        <p>${book.description}</p>
-        `
-        let userTag = book.users.forEach(user => {
-            let p = document.createElement('p')
-            p.innerHTML = `${user.username}`
-            info.append(p)
-        })
-        const btn = document.createElement('button')
-        info.append(btn) 
-        btn.addEventListener('click', () => likeCallback(book, btn))
-    })
+    .then(likeCallback(book, btn))
     }
 
 
 }
-
+});
